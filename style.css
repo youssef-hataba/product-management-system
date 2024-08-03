@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+.crud {
+    width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    color: #fff;
+    margin: 4px 0;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+input:focus {
+    background-color: #000;
+    transform: scale(1.01);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price input {
+    width: 20%;
+}
+
+#total {
+    background-color: rgb(171, 0, 0);
+    padding: 5px 2px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+#total::before {
+    content: 'Total :';
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #65048b;
+    color: #fff;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #820ab2;
+    letter-spacing: 1px;
+    transform: scale(1.02);
+}
+
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+.error {
+    animation: shake 0.3s ease-in-out 2;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-2px);
+    }
+
+    75% {
+        transform: translateY(2px);
+    }
+}
